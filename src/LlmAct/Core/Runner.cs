@@ -18,6 +18,7 @@ namespace LlmAct.Core
             LogInfo($"Input = {gguf.FilePath}");
             LogInfo($"GGUF version = {gguf.Version}");
             var meta = gguf.MetaItems.ToDict();
+            meta.Remove("tokenizer.chat_template");
             Console.WriteLine(meta.ToJson());
         }
     }
