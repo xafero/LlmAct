@@ -14,6 +14,10 @@ namespace LlmAct
                 {
                     Runner.Run(o);
                 }
+                else if (o.InspectIt != null)
+                {
+                    Inspector.Run(o);
+                }
             });
         }
     }

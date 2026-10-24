@@ -8,5 +8,8 @@ namespace LlmAct.Core
 	{
 		[Option('r', "run", HelpText = "Run one model.")]
 		public string? RunModel { get; set; }
+
+		[Option('i', "inspect", HelpText = "Inspect models.")]
+		public string? InspectIt { get; set; }
 	}
 }
