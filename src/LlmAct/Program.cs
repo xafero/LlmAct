@@ -1,7 +1,5 @@
 ﻿using CommandLine;
-using System;
 using LlmAct.Core;
-using LlmAct.Utils;
 
 namespace LlmAct
 {
@@ -15,7 +13,6 @@ namespace LlmAct
                 if (o.RunModel != null)
                 {
                     Runner.Run(o);
-                    return;
                 }
             });
         }
