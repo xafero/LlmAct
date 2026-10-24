@@ -11,4 +11,10 @@
     <PackageReference Include="GGUFSharp" Version="1.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Conf\*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

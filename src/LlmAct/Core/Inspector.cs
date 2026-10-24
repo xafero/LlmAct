@@ -23,15 +23,9 @@ namespace LlmAct.Core
                 LogInfo($"GGUF version = {gguf.Version}");
                 var meta = gguf.MetaItems.ToDict();
                 meta.Remove("tokenizer.chat_template");
-                
                 foreach (var pair in meta.ToArray())
-                {
                     if (pair.Value.Contains("GGUF_METADATA_VALUE_"))
                         meta.Remove(pair.Key);
-                }
-                
-                
-                
                 Console.WriteLine(meta.ToJson());
             }
         }

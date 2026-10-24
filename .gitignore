@@ -428,3 +428,4 @@ FodyWeavers.xsd
 #*.lscache
 /src/.idea/
 /src/dist/
+/src/LlmAct/Conf/config.json
