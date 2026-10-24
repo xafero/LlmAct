@@ -1,5 +1,4 @@
 using System;
-using System.Text.Json;
 using LlmAct.Utils;
 using static LlmAct.Utils.Logger;
 
@@ -19,7 +18,7 @@ namespace LlmAct.Core
             LogInfo($"Input = {gguf.FilePath}");
             LogInfo($"GGUF version = {gguf.Version}");
             var meta = gguf.MetaItems.ToDict();
-            Console.WriteLine(JsonSerializer.Serialize(meta));
+            Console.WriteLine(meta.ToJson());
         }
     }
 }
